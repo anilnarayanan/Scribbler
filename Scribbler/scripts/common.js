@@ -21,7 +21,7 @@ function signUp() {
           </p>\
           </form><p class='segment-2-p'><button class='segment-2-btn' onclick='signUpUser(input-name, input-username, input-pwd, input-confirmpwd)'>Sign Up</button></p>\
           </div>";
-  document.getElementById("segment2-parent").innerHTML = template;
+  document.getElementById("segment2").innerHTML = template;
 }
 
 function signUpUser(name, username, pwd, confirmpwd) {}
@@ -53,5 +53,5 @@ function signIn() {
           </form><p class='segment-2-p'><button class='segment-2-btn' onclick='signUpUser(input-name, input-username, input-pwd, input-confirmpwd)'>Sign In</button></p>\
           <p class='segment-2-p2'>Not a member? <a href='#' onclick = 'closeSegment2Parent();signUp()'>Sign Up</a></p>\
           </div>";
-  document.getElementById("segment2-parent").innerHTML = template;
+  document.getElementById("segment2").innerHTML = template;
 }
