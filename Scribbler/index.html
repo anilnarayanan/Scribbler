@@ -2,7 +2,13 @@
 <html>
   <head>
     <title>ScriBBler</title>
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      type="text/css"
+    />
     <!-- TODO: Include Font Awesome file here -->
 
     <!-- TODO: Include Google Fonts file here -->
@@ -12,9 +18,9 @@
     />
   </head>
 
-  <body>
+  <body class="bg">
     <!-- TODO: Include all your code for the header and home page here -->
-    <div id="header">
+    <div id="segment1">
       <span style="float: left;">
         <h2 class="heading">
           ScriBBler
@@ -24,9 +30,15 @@
         </h4>
       </span>
       <span style="float: right;">
-        <button class="header-btn">Sign Up</button>
-        <button class="header-btn">Sign In</button>
+        <button class="header-btn" id="signup" onclick="signUp()">
+          Sign Up
+        </button>
+        <button class="header-btn" id="signin" onclick="signIn()">
+          Sign In
+        </button>
       </span>
     </div>
+    <div id="segment2-parent" class="segment2-parent-div"></div>
+    <script src="./scripts/common.js"></script>
   </body>
 </html>
