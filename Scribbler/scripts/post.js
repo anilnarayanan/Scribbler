@@ -1,4 +1,3 @@
-var postcard;
 var nLikes = 0;
 
 /**

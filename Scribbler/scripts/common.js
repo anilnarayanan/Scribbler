@@ -31,6 +31,11 @@ var postDetails = [
   },
 ];
 
+/**
+ * Method to display the user signup modal
+ *
+ * @param {*} segment
+ */
 function signUp(segment) {
   var template =
     "<div id='segment2-modal' class='segment-2-child-modal'>\
@@ -59,10 +64,18 @@ function signUp(segment) {
 
 // function signUpUser(name, username, pwd, confirmpwd) {}
 
+/**
+ * Method to close the respective modal
+ */
 function closeSegment2Parent() {
   document.getElementById("segment2-modal").remove();
 }
 
+/**
+ * Method to display the user signin modal
+ *
+ * @param {*} segment
+ */
 function signIn(segment) {
   var template =
     "<div id='segment2-modal' class='segment-2-child-modal'>\

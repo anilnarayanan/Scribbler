@@ -1,3 +1,6 @@
+/**
+ * Method to display the createpost modal
+ */
 function createPost() {
   var template =
     "<div id='segment2-modal' class='segment-2-child-modal'>\
@@ -17,6 +20,9 @@ function createPost() {
   document.getElementById("segment2").innerHTML = template;
 }
 
+/**
+ * Method to open the html file in the existing browser window
+ */
 function redirectAllPostsPage() {
   window.open("./html/postslist.html", "_self");
 }
