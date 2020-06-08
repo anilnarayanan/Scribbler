@@ -43,74 +43,59 @@
 
     <div>
       <div>
-        <h2 class="post-title">
-          Everything you should know about ‘module’ & ‘require’ in Node.js
+        <h2 id="title" class="post-title">
+          <!-- Everything you should know about ‘module’ & ‘require’ in Node.js -->
         </h2>
       </div>
 
       <div>
         <span style="float: left; padding-left: 10%;">
-          <h3>Srishti Gupta</h3>
+          <h3 id="author" class="post-h3"></h3>
         </span>
         <span style="float: right; padding-right: 10%;">
-          <button class="post-button">Edit <i class="fa fa-edit"></i></button>
+          <button id="edit" class="edit-button button" onclick="edit()">
+            Edit <i class="fa fa-edit"></i>
+          </button>
         </span>
       </div>
     </div>
 
-    <div>
-      <p class="post-body">
-        The Delhi government on Saturday filed a police case against the Sir
-        Ganga Ram Hospital in the city for violating rules for coronavirus tests
-        amid a growing controversy surrounding COVID-19 hospitals in the
-        capital. The First Information Report or FIR was filed against unknown
-        functionaries at the private hospital on a complaint by the Deputy
-        Secretary of the Delhi government's Health Department. According to the
-        complaint, while the government had made it mandatory for registering
-        coronavirus tests on an official software programme, authorities at the
-        Sir Ganga Ram Hospital (SGRH) were not doing so. It was found that the
-        RT-PCR app, developed by the central government, was not being used even
-        on June 3 at the Sir Ganga Ram Hospital, the complaint alleged.
-        Hospitals are required to register COVID-19 tests through the app so
-        that the data on coronavirus patients is reflected in real-time in the
-        government database and there is no duplication or error. Authorities at
-        the SGRH, a leading private hospital and a dedicated COVID-19 facility,
-        said the lapse was an oversight and that it had already responded to a
-        show-cause notice sent by the Delhi government. "There was an error on
-        our part. During lockdown when we started testing, we were understaffed.
-        It was an oversight. Delhi government had issued show cause notice for
-        not reporting on RT-PCR app and we have responded to them already. We
-        hope this issue is settled soon," Dr DS Rana, chairman of Sir Ganga Ram
-        Hospital told NDTV.
-      </p>
+    <div">
+      <p id="content" class="post-body div-scroll"></p>
     </div>
     <div>
       <span style="padding-left: 10%;">
-        <button class="post-button">
+        <button id="like-button" class="like-button button" onclick="like()">
           <i class="fa fa-thumbs-up"></i> Like
         </button>
       </span>
     </div>
 
-    <div></div>
+    <div><p id="nLikes" class="nLikes"></p></div>
 
     <div>
-      <span style="padding-left: 10%;">
-        <input type="text" placeholder="Leave a comment..." />
+      <span >
+        <textarea id="commentInput" class="comment-input" placeholder="Leave a comment..." rows="4" cols="50"></textarea>
       </span>
     </div>
 
     <div>
-      <span style="padding-left: 10%;">
-        <button class="post-button">
+      <span >
+        <button id="commentButton" class="comment-button button" onclick="addComment(commentInput)">
           Comment
         </button>
       </span>
     </div>
 
     <div>
-      <h4 class="post-body">All Comments</h4>
+      <h4 class="all-comments">All Comments</h4>
     </div>
+
+    <div id="divComment" >
+      <div class="div-comment"><p id="label-comment" class="label-comment"></p></div>
+    </div>
+
     <script src="../scripts/post.js"></script>
+    <script src="../scripts/common.js"></script>
   </body>
 </html>

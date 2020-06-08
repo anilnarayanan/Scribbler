@@ -9,48 +9,106 @@ html {
 }
 
 .post-title {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   left: 50%;
   top: 10%;
-  width: 100%;
   transform: translate(-50%, -50%);
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 5%;
-  margin: 0;
 }
 
-.post-h > h2,
-h3 {
-  margin: 0;
+.post-h2 {
+  left: 10%;
+  top: 15%;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  margin: 0;
+  position: absolute;
 }
 
-/* .post-span > span {
-  padding: 0 0 0 10%;
-  float: left;
-  padding-left: 10%;
-} */
+.post-h3 {
+  left: 10%;
+  top: 15%;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+}
 
-.post-button {
+.div-scroll {
+  overflow: scroll;
+  height: 35%;
+}
+
+.button {
   background-color: red;
   color: white;
   border: 0;
   padding: 10px 15px;
   box-shadow: 0 8px 6px -6px #888888;
+  position: absolute;
+}
+
+.edit-button {
+  top: 15%;
+  right: 10%;
+}
+
+.like-button {
+  left: 10%;
+  top: 60%;
+}
+
+.comment-button {
+  left: 10%;
+  top: 80%;
 }
 
 .post-body {
-  padding-left: 10%;
-  padding-top: 30px;
+  left: 10%;
+  top: 20%;
   text-align: justify;
   width: 80%;
   font-family: "Times New Roman", Times, serif;
   font-size: medium;
+  position: absolute;
+}
+
+.comment-input {
+  left: 10%;
+  top: 70%;
+  position: absolute;
+  width: 50%;
+  border: 1;
+}
+
+.all-comments {
+  left: 10%;
+  top: 85%;
+  position: absolute;
+}
+
+.nLikes {
+  left: 10%;
+  top: 64%;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+}
+
+.div-comment {
+  left: 10%;
+  top: 90%;
+  position: absolute;
+  padding: 5px;
+  border-style: solid;
+  border-width: 10px 5px 10px 5px;
+  color: lightgray;
+  width: 48%;
+  display: none;
+}
+
+.div-comment .label-comment {
+  color: black;
 }
