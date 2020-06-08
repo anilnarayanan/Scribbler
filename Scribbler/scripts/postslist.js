@@ -1,15 +1,33 @@
+var postcard;
+
 function deletePost(post) {
-  //   document.getElementById("segment1").setAttribute("class", "bg-ontrash");
-  //   document.getElementsByClassName("bg")[0].setAttribute("class", "bg-ontrash");
-  var template =
-    "<div id='trashPopup' class='trash'>\
-        <p>Are you sure you want to delete this post?</p>\
-        <p><button class='trash-dialog trash-dialog-yes'>Yes</button>\
-        <button class='trash-dialog trash-dialog-no' onclick='closeTrashPopup(trashPopup)'>No</button></p>\
-    </div>";
-  document.getElementById("container").innerHTML += template;
+  postcard = post;
+  console.log(postcard);
+
+  document.querySelector(".bg-modal").style.display = "flex";
+  document.querySelector(".modal-content").style.display = "flex";
+  // var template =
+  //   "Are you sure you want to delete this post?\
+  //       <button class='trash-dialog-yes'>Yes</button>\
+  //       <button class='trash-dialog-no' onclick='closeTrashPopup(trashPopup)'>No</button>";
+  // document.getElementById("trashPopup").innerHTML += template;
 }
 
-function closeTrashPopup(trashPopup) {
-  trashPopup.remove();
+function test() {
+  postcard.remove();
+  closeTrashPopup();
+  location.reload();
+}
+
+function disp() {
+  document.querySelector(".bg-modal").style.display = "flex";
+  document.querySelector(".modal-content").style.display = "flex";
+}
+
+/**
+ * Method to close/hide the trash diaglog
+ */
+function closeTrashPopup() {
+  document.querySelector(".bg-modal").style.display = "none";
+  document.querySelector(".modal-content").style.display = "none";
 }

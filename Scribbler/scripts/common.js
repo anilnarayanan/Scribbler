@@ -1,4 +1,4 @@
-function signUp() {
+function signUp(segment) {
   var template =
     "<div id='segment2-modal' class='segment-2-child-modal'>\
     <form><p class='title-prop'><label>Get Started</label><span class='close-win-prop'><i class='fa fa-times' aria-hidden='true' onclick='closeSegment2Parent()'></i></span></p>\
@@ -21,7 +21,7 @@ function signUp() {
           </p>\
           <p class='segment-2-p'><button class='segment-2-btn' onclick='signUpUser(input-name, input-username, input-pwd, input-confirmpwd)'>Sign Up</button></p>\
           </form></div>";
-  document.getElementById("segment2").innerHTML = template;
+  document.getElementById(segment).innerHTML = template;
 }
 
 function signUpUser(name, username, pwd, confirmpwd) {}
@@ -30,7 +30,7 @@ function closeSegment2Parent() {
   document.getElementById("segment2-modal").remove();
 }
 
-function signIn() {
+function signIn(segment) {
   var template =
     "<div id='segment2-modal' class='segment-2-child-modal'>\
     <form><p class='title-prop'><label>Welcome Back!</label><span class='close-win-prop'><i class='fa fa-times' aria-hidden='true' onclick='closeSegment2Parent()'></i></span></p>\
@@ -43,10 +43,13 @@ function signIn() {
           <p class='segment-2-p'>\
               <input type='password' id='input-pwd' class='input-text-prop input-text-prop-width' placeholder='Enter your password' required></input>\
           </p>\
-          <p class='segment-2-p2'>Not a member? <a href='#' onclick = 'closeSegment2Parent();signUp()'>Sign Up</a></p>\
+          <p class='segment-2-p2'>Not a member? <a href='#' onclick = 'closeSegment2Parent();signUp(" +
+    '"' +
+    segment +
+    "\")'>Sign Up</a></p>\
           <p class='segment-2-p'><button class='segment-2-btn' onclick='signUpUser(input-name, input-username, input-pwd, input-confirmpwd)'>Sign In</button></p>\
           </form></div>";
-  document.getElementById("segment2").innerHTML = template;
+  document.getElementById(segment).innerHTML = template;
 }
 
 function createPost() {
@@ -62,7 +65,7 @@ function createPost() {
           <p class='segment-2-p'>\
               <textarea class='input-text-prop input-text-prop-width' rows='20' cols='120' placeholder='Enter the contents of your post' required></textarea>\
           </p>\
-          <span class='test'><p class='segment-2-p'><button class='createPostBtn' onclick='' style=''>Create</button></p></span>\
+          <span class='test'><button class='createPostBtn' onclick='' style=''>Create</button></span>\
       </div></form>\
     </div>";
   document.getElementById("segment2").innerHTML = template;
