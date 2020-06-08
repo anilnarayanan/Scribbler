@@ -55,7 +55,6 @@ function like() {
  * Method to add comments to the post
  */
 function addComment(comment) {
-  console.log(comment.value);
   document.querySelector(".div-comment").style.display = "flex";
-  document.getElementById("divComment").prepend();
+  document.getElementById("labelComment").innerHTML = comment.value;
 }
