@@ -44,6 +44,7 @@
   transform: translate(-50%, -50%);
 }
 
+/* Property for the close icon */
 .close-win-prop {
   float: right;
 }
@@ -121,6 +122,7 @@
   border: 1;
 }
 
+/* Property for the Create Post button */
 .createPostBtn {
   text-align: center;
   background-color: #82b366;

@@ -14,6 +14,7 @@
       @import url("https://fonts.googleapis.com/css?family=Montez&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
     </style>
+    <script src="../scripts/postslist_v2.js"></script>
   </head>
 
   <body id="bg" class="bg">
@@ -47,25 +48,18 @@
       <!-- post 1 starts here -->
       <div id="card1" class="post-card">
         <div class="post-name">
-          <p>Srishti Gupta</p>
+          <p id="author1"></p>
         </div>
 
         <div id="post1" class="post-title">
           <div>
-            <p class="post-title-p">
-              ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
-            </p>
+            <p id="title1" class="post-title-p"></p>
             <span>
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" onclick="deletePost(card1)"></i>
             </span>
           </div>
-          <p class="post-contents-p truncate-overflow">
-            Since JavaScript does not have any type-checking, either of these
-            keywords can be used to declare a variable of any type (datatype) in
-            JavaScript. Though all the three keywords are used for the same
-            purpose, they are different.
-          </p>
+          <p id="content1" class="post-contents-p truncate-overflow"></p>
           <span>
             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
             <i class="fa fa-ellipsis-h"></i>
@@ -77,24 +71,18 @@
       <!-- post 2 starts here -->
       <div id="card2" class="post-card">
         <div class="post-name">
-          <p>Colby Fayock</p>
+          <p id="author2"></p>
         </div>
 
         <div class="post-title">
           <div>
-            <p class="post-title-p">
-              What is linting and how can it save you time?
-            </p>
+            <p id="title2" class="post-title-p"></p>
             <span>
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" onclick="deletePost(card2)"></i>
             </span>
           </div>
-          <p class="post-contents-p truncate-overflow">
-            One of the biggest challenges in software development is time. It’s
-            something we can’t easily get more of, but linting can help us make
-            the most out of the time we have.
-          </p>
+          <p id="content2" class="post-contents-p truncate-overflow"></p>
           <span>
             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
             <i class="fa fa-ellipsis-h"></i>
@@ -107,25 +95,18 @@
       <!-- post 3 starts here -->
       <div id="card3" class="post-card">
         <div class="post-name">
-          <p>Yazeed Bzadough</p>
+          <p id="author3"></p>
         </div>
 
         <div class="post-title">
           <div>
-            <p class="post-title-p">
-              How to Get More Views on Your Tech Blog
-            </p>
+            <p id="title3" class="post-title-p"></p>
             <span>
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" onclick="deletePost(card3)"></i>
             </span>
           </div>
-          <p class="post-contents-p truncate-overflow">
-            If you're a developer with a Twitter account, you've already seen
-            everyone and their cat start a blog, YouTube channel, or Patreon. We
-            all want to become stars, or at the very least, a recognizable name
-            in the industry.
-          </p>
+          <p id="content3" class="post-contents-p truncate-overflow"></p>
           <span>
             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
             <i class="fa fa-ellipsis-h"></i>
@@ -137,26 +118,18 @@
       <!-- post 4 starts here -->
       <div id="card4" class="post-card">
         <div class="post-name">
-          <p>Cedd Burge</p>
+          <p id="author4"></p>
         </div>
 
         <div class="post-title">
           <div>
-            <p class="post-title-p">
-              How to write easily describable code
-            </p>
+            <p id="title4" class="post-title-p"></p>
             <span>
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" onclick="deletePost(card4)"></i>
             </span>
           </div>
-          <p class="post-contents-p truncate-overflow">
-            When code is not describable using words, most people have to do
-            some mental mapping to turn it in to words. This wastes mental
-            energy, and you run the risk of getting the mapping wrong. Different
-            people will map to different words, which leads to confusion when
-            discussing the code.
-          </p>
+          <p id="content4" class="post-contents-p truncate-overflow"></p>
           <span>
             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
             <i class="fa fa-ellipsis-h"></i>
@@ -169,24 +142,22 @@
       <!-- post 5 starts here -->
       <div id="card5" class="post-card">
         <div class="post-name">
-          <p>Srishti Gupta</p>
+          <p id="author5"></p>
         </div>
 
         <div class="post-title">
           <div>
-            <p class="post-title-p">
-              Everything you should know about ‘module’ & ‘require’ in Node.js
-            </p>
+            <p id="title5" class="post-title-p"></p>
             <span>
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" onclick="deletePost(card5)"></i>
             </span>
           </div>
-          <p class="post-contents-p truncate-overflow">
-            Node.js treats each JavaScript file as a separate module. For
+          <p id="content5" class="post-contents-p truncate-overflow">
+            <!-- Node.js treats each JavaScript file as a separate module. For
             instance, if you have a file containing some code and this file is
             named xyz.js, then this file is treated as a module in Node, and you
-            can say that you’ve created a module named xyz.
+            can say that you’ve created a module named xyz. -->
           </p>
           <span>
             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->

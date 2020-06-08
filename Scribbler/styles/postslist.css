@@ -7,11 +7,12 @@ html {
   height: 100%;
   margin: 0;
 
+  /* Additional property to support 3 line truncation */
   max-width: 100%;
-  /* margin: 2rem auto; */
   line-height: var(--lh);
 }
 
+/* Property to set page's background color */
 .bg {
   background-color: #ffeedd;
 }
@@ -57,15 +58,16 @@ html {
   max-width: 100%;
 }
 
+/* Property for the post div */
 .post-card {
   display: grid;
   grid-template-columns: 15% 85%;
   border-radius: 15px;
   box-shadow: 0 0 10px #888888;
   text-overflow: hidden;
-  /* height: 10em; */
 }
 
+/* Property for the authors name in the post */
 .post-name {
   display: flex;
   flex-direction: row;
@@ -84,6 +86,7 @@ html {
   color: grey;
 }
 
+/* Property for the posts title */
 .post-title {
   background-color: #e8e8e8;
   color: grey;
@@ -94,10 +97,12 @@ html {
   box-shadow: 0 0 10px -10px #888888;
 }
 
+/* Property for the posts title paragraph */
 .post-title-p {
   display: inline;
 }
 
+/* Property for the posts content */
 .post-contents-p {
   color: #000000;
 }
@@ -106,10 +111,12 @@ span {
   float: right;
 }
 
+/* Add effects to each post on hover */
 div.post-card:hover {
   box-shadow: 0 0 25px #888888;
 }
 
+/* Change the mouse pointer on hovering over the trash or ellipsis icon */
 i:hover {
   cursor: pointer;
 }
@@ -129,6 +136,7 @@ i:hover {
   transform: translate(-50%, -50%);
 } */
 
+/* Property for the trash icon */
 .trash-button {
   border: 0;
   background-color: #ffffff;
@@ -139,14 +147,17 @@ i:hover {
   margin: 5px;
 }
 
+/* Property for the YES button */
 .trash-dialog-yes {
   background-color: #82b366;
 }
 
+/* Property for the NO button */
 .trash-dialog-no {
   background-color: red;
 }
 
+/* To truncate more than 3 lines*/
 .truncate-overflow {
   --max-lines: 3;
   position: relative;
